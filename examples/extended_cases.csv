@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,66,86,18,12,6,128,review,distributed data baseline scenario exercises the review path for bounded failure handling
+pressure,82,75,26,22,9,78,review,distributed data pressure scenario exercises the review path for bounded failure handling
+surge,99,96,18,14,14,230,accept,distributed data surge scenario keeps the local fixture within the modeled acceptance band
+degraded,67,62,32,24,6,-6,review,distributed data degraded scenario exercises the review path for bounded failure handling
+recovery,83,104,22,9,10,213,accept,distributed data recovery scenario keeps the local fixture within the modeled acceptance band
+boundary,73,84,24,16,10,120,review,distributed data boundary scenario exercises the review path for bounded failure handling
