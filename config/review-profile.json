@@ -1,0 +1,29 @@
+{
+  "repo": "exchan",
+  "language": "Elixir",
+  "category": "Distributed data",
+  "case_count": 5,
+  "score_formula": "signal * 2 + slack + confidence - drag * 3",
+  "lane_thresholds": {
+    "ship": 140,
+    "watch": 105
+  },
+  "read_order": [
+    "README.md",
+    "fixtures/domain_review.csv",
+    "metadata/domain-review.json",
+    "examples/exchan-walkthrough.md"
+  ],
+  "first_question": "Does clock drift still dominate the review result?",
+  "second_question": "Is presence churn being penalized hard enough before merge risk is trusted?",
+  "highest_case": {
+    "name": "baseline",
+    "focus": "clock drift",
+    "score": 197
+  },
+  "lowest_case": {
+    "name": "stress",
+    "focus": "join pressure",
+    "score": 152
+  }
+}

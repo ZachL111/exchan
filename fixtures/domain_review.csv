@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,clock drift,75,27,10,50,197,ship
+stress,join pressure,57,37,19,58,152,ship
+edge,presence churn,78,42,23,60,189,ship
+recovery,merge risk,88,25,28,61,178,ship
+stale,clock drift,56,33,17,86,180,ship

@@ -1,0 +1,73 @@
+{
+  "repo": "exchan",
+  "language": "Elixir",
+  "category": "Distributed data",
+  "goal": "Track CRDT-backed presence state with joins, leaves, and clock merges.",
+  "review_model": {
+    "terms": [
+      "clock drift",
+      "join pressure",
+      "presence churn",
+      "merge risk"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "clock drift",
+      "signal": 75,
+      "slack": 27,
+      "drag": 10,
+      "confidence": 50,
+      "score": 197,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "join pressure",
+      "signal": 57,
+      "slack": 37,
+      "drag": 19,
+      "confidence": 58,
+      "score": 152,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "presence churn",
+      "signal": 78,
+      "slack": 42,
+      "drag": 23,
+      "confidence": 60,
+      "score": 189,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "merge risk",
+      "signal": 88,
+      "slack": 25,
+      "drag": 28,
+      "confidence": 61,
+      "score": 178,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "clock drift",
+      "signal": 56,
+      "slack": 33,
+      "drag": 17,
+      "confidence": 86,
+      "score": 180,
+      "lane": "ship"
+    }
+  ]
+}
